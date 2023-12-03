@@ -1,0 +1,39 @@
+---
+interface Props {
+  title: string;
+  href?: string;
+}
+const { title, href = "#" } = Astro.props;
+---
+
+<div
+  class="duration-250 group card join-item flex-1 transform rounded-badge bg-base-200 transition hover:scale-[101.5%]"
+>
+  <div class="card-body items-center text-center">
+    <h2 class="card-title group-hover:text-primary">{title}</h2>
+    <slot />
+    <div class="card-actions">
+      <a
+        href={href}
+        type="button"
+        class="btn btn-neutral rounded-full font-normal group-hover:btn-primary"
+        title={title}
+        >Leer Más <svg
+          class="h-6 w-6"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          ><rect x="0" y="0" width="24" height="24" fill="none" stroke="none"
+          ></rect><path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5px"
+            d="M7 7h10v10M7 17L17 7"></path></svg
+        >
+      </a>
+    </div>
+  </div>
+</div>
