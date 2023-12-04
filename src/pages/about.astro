@@ -1,0 +1,71 @@
+---
+import Layout from "../layouts/root-layout.astro";
+---
+
+<Layout title="Sobre Nosotros">
+  <div class="navbar w-full border-b bg-base-100">
+    <div class="navbar-start">
+      <a type="button" class="btn btn-ghost" href="/" title="SecureNet">
+        <img class="h-8 w-8" src="/logo.svg" alt="SecureNet logo" />
+      </a>
+    </div>
+    <div class="navbar-end">
+      <a class="btn btn-disabled" href="/about">Nuestro equipo</a>
+    </div>
+  </div>
+  <main class="px-5">
+    <div class="mx-8 flex min-h-[calc(100vh-4rem)] items-center justify-center">
+      <div class="flex flex-col items-center">
+        <h1
+          class="bg-gradient-to-r from-secondary from-20% to-primary bg-clip-text text-center text-6xl font-black leading-none text-transparent transition md:text-9xl"
+        >
+          <span>Nuestro Equipo</span>
+        </h1>
+        <div class="mt-16 grid grid-cols-2 grid-rows-2 gap-8">
+          <div
+            class="flex w-64 flex-col items-center justify-center gap-4 rounded-badge border p-5"
+          >
+            <div class="avatar placeholder">
+              <div class="w-24 rounded-full bg-neutral text-neutral-content">
+                <span class="text-3xl">DP</span>
+              </div>
+            </div>
+            <span class="text-center">Daniel Pliego Vega</span>
+          </div>
+          <div
+            class="flex w-64 flex-col items-center justify-center gap-4 rounded-badge border p-4"
+          >
+            <div class="avatar placeholder">
+              <div class="w-24 rounded-full bg-neutral text-neutral-content">
+                <span class="text-3xl">FC</span>
+              </div>
+            </div>
+            <span class="text-center">Fernán Enrique Cetina Escalante</span>
+          </div>
+          <div
+            class="flex w-64 flex-col items-center justify-center gap-4 rounded-badge border p-4"
+          >
+            <div class="avatar placeholder">
+              <div class="w-24 rounded-full bg-neutral text-neutral-content">
+                <span class="text-3xl">RC</span>
+              </div>
+            </div>
+            <span class="text-center"
+              >Rodrigo Alejandro Castrejón Cervantes</span
+            >
+          </div>
+          <div
+            class="flex w-64 flex-col items-center justify-center gap-4 rounded-badge border p-4"
+          >
+            <div class="avatar placeholder">
+              <div class="w-24 rounded-full bg-neutral text-neutral-content">
+                <span class="text-3xl">VJ</span>
+              </div>
+            </div>
+            <span class="text-center">Vanesa Jaimes Jaimes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>
