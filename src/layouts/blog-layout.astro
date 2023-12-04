@@ -1,6 +1,10 @@
 ---
 import RootLayout from "../layouts/root-layout.astro";
 const { frontmatter } = Astro.props;
+
+function menuEntryClass(href: string) {
+  return href === Astro.url.pathname ? " active" : "";
+}
 const menuEntries = {
   honeyNets: [
     {
@@ -69,7 +73,7 @@ const menuEntries = {
       </a>
     </div>
     <div class="navbar-end">
-      <a class="btn">Nuestro equipo</a>
+      <a class="btn" href="/about">Nuestro equipo</a>
     </div>
   </div>
   <!-- End navbar -->
@@ -81,7 +85,7 @@ const menuEntries = {
       <!-- Start article card -->
       <div class="card card-bordered max-w-prose border-base-300 bg-base-100">
         <figure class="aspect-[851/315] w-full">
-          <div class="cover h-full w-full"></div>
+          <div class="cover-isometric h-full w-full"></div>
         </figure>
         <div class="card-body">
           <article class="prose">
@@ -100,7 +104,10 @@ const menuEntries = {
               {
                 menuEntries.honeyNets.map((entry) => (
                   <li>
-                    <a class="menu-link" href={entry.href}>
+                    <a
+                      class={"menu-link" + menuEntryClass(entry.href)}
+                      href={entry.href}
+                    >
                       {entry.title}
                     </a>
                   </li>
@@ -114,7 +121,10 @@ const menuEntries = {
               {
                 menuEntries.tunneling.map((entry) => (
                   <li>
-                    <a class="menu-link" href={entry.href}>
+                    <a
+                      class={"menu-link" + menuEntryClass(entry.href)}
+                      href={entry.href}
+                    >
                       {entry.title}
                     </a>
                   </li>
@@ -128,7 +138,10 @@ const menuEntries = {
               {
                 menuEntries.iot.map((entry) => (
                   <li>
-                    <a class="menu-link" href={entry.href}>
+                    <a
+                      class={"menu-link" + menuEntryClass(entry.href)}
+                      href={entry.href}
+                    >
                       {entry.title}
                     </a>
                   </li>
@@ -156,7 +169,7 @@ const menuEntries = {
     );
   }
 
-  .cover {
+  .cover-wavy {
     background-color: #e5e5f7;
     opacity: 0.8;
     background-image: repeating-radial-gradient(
@@ -165,5 +178,81 @@ const menuEntries = {
         #e5e5f7 10px
       ),
       repeating-linear-gradient(#444cf755, #444cf7);
+  }
+
+  .cover-circles {
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: radial-gradient(circle at center center, #444cf7, #e5e5f7),
+      repeating-radial-gradient(
+        circle at center center,
+        #444cf7,
+        #444cf7,
+        10px,
+        transparent 20px,
+        transparent 10px
+      );
+    background-blend-mode: multiply;
+  }
+
+  .cover-isometric {
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: linear-gradient(
+        30deg,
+        #444cf7 12%,
+        transparent 12.5%,
+        transparent 87%,
+        #444cf7 87.5%,
+        #444cf7
+      ),
+      linear-gradient(
+        150deg,
+        #444cf7 12%,
+        transparent 12.5%,
+        transparent 87%,
+        #444cf7 87.5%,
+        #444cf7
+      ),
+      linear-gradient(
+        30deg,
+        #444cf7 12%,
+        transparent 12.5%,
+        transparent 87%,
+        #444cf7 87.5%,
+        #444cf7
+      ),
+      linear-gradient(
+        150deg,
+        #444cf7 12%,
+        transparent 12.5%,
+        transparent 87%,
+        #444cf7 87.5%,
+        #444cf7
+      ),
+      linear-gradient(
+        60deg,
+        #444cf777 25%,
+        transparent 25.5%,
+        transparent 75%,
+        #444cf777 75%,
+        #444cf777
+      ),
+      linear-gradient(
+        60deg,
+        #444cf777 25%,
+        transparent 25.5%,
+        transparent 75%,
+        #444cf777 75%,
+        #444cf777
+      );
+    background-size: 20px 35px;
+    background-position:
+      0 0,
+      0 0,
+      10px 18px,
+      10px 18px,
+      0 0,
+      10px 18px;
   }
 </style>
