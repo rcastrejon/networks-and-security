@@ -47,6 +47,6 @@ La etapa final antes de que se conceda al usuario acceso al servidor es la auten
 
 Aunque las contraseñas se cifran, todavía no se recomienda usar contraseñas para conexiones seguras. Esto se debe a que muchos robots pueden simplemente realizar ataque de fuerza bruta para descifrar contraseñas fáciles o predeterminadas y así obtener acceso a tu cuenta. En vez de eso, la alternativa recomendada es un par de claves SSH. Se trata de un conjunto de claves asimétricas utilizadas para autenticar al usuario sin necesidad de introducir ninguna contraseña.
 
-![Cliente y servidor con SSH.](../../assets/tunneling/ssh-1.jpg)
+![Cliente y servidor con SSH.](../../assets/tunneling/ssh-2.jpg)
 
 [Fuente](https://www.hostinger.mx/tutoriales/que-es-ssh)
