@@ -1,10 +1,13 @@
 ---
-layout: ./_layout.astro
+layout: ../../layouts/blog-layout.astro
+title: Honey Nets
 ---
 
-# Funciones de sus elementos:
+# Características
 
 Una Honey Net es el honeypot más complejo, el que ofrece un nivel más alto de interacción con el intruso y el que permite recopilar mayor cantidad de información relativa a un ataque. Sin embargo, lejos de ser una herramienta empaquetada y lista para ser instalada, una Honey Net es una red completa que contiene un conjunto de sistemas dispuestos para ser atacados.
+
+![Diagrama de una Honey Net.](../../assets/honey-nets/characteristics.png)
 
 Una Honey Net puede contener cualquier componente de red imaginable, incluyendo routers y switches, lo que le permite replicar la red de cualquier organización. Este hecho, unido a que los equipos que contiene son sistemas reales con servicios y configuraciones habituales, hace que los riesgos y las vulnerabilidades que permite descubrir sean exactamente las mismas que se pueden encontrar en cualquier organización que cuente con sistemas similares a los expuestos.
 
@@ -17,7 +20,5 @@ Aparte de los sistemas destinados a recibir los ataques, una Honey Net cuenta co
 - Captura de datos. La clave del éxito de una Honey Net radica en su capacidad para capturar la mayor cantidad de información que sea posible, pues serán estos datos los que van a permitir estudiar las utilidades, tácticas y motivos de la comunidad de atacantes. Es fundamental capturar todo el tráfico que entre o salga de la Honey Net, así como cualquier actividad del intruso en el interior de un sistema comprometido.
 - Centralización de información. Para conseguir un mejor rendimiento en escenarios con distintas Honey Nets dispersas por Internet es recomendable que la información capturada se envíe de forma segura a un servidor centralizado para su almacenamiento y análisis.
   De este modo se puede tener un mayor control sobre los datos recogidos, se pueden re-aprovechar experiencias y se puede obtener una imagen más clara de la evolución de los diferentes ataques presentes en La Red.
-
-![Diagrama de una Honey Net.](../../assets/honey-nets/functions.png)
 
 [Fuente](http://arantxa.ii.uam.es/~jlopezv/publicaciones/mundointernet04.pdf)

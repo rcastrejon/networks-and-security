@@ -1,5 +1,6 @@
 ---
-layout: ./_layout.astro
+layout: ../../layouts/blog-layout.astro
+title: Honey Nets
 ---
 
 # Honey Nets Virtuales

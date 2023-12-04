@@ -1,4 +1,47 @@
-<div>
+---
+import RootLayout from "../layouts/root-layout.astro";
+const { frontmatter } = Astro.props;
+const menuEntries = {
+  honeyNets: [
+    {
+      title: "Fortaleciendo la Seguridad en Redes: El Poder de las Honey Nets",
+      href: "/honey-nets",
+    },
+    {
+      title: "Características y Funciones",
+      href: "/honey-nets/characteristics",
+    },
+    {
+      title: "Honey Nets Virtuales",
+      href: "/honey-nets/virtual",
+    },
+    {
+      title: "Ubicación en la Red",
+      href: "/honey-nets/location",
+    },
+  ],
+  tunneling: [
+    {
+      title: "Establecimiento de un enlace seguro de red: Tunelización",
+      href: "/tunneling",
+    },
+    {
+      title: "VPN",
+      href: "/tunneling/vpn",
+    },
+    {
+      title: "SSH",
+      href: "/tunneling/ssh",
+    },
+    {
+      title: "Point to Point Tunneling Protocol",
+      href: "/tunneling/pptp",
+    },
+  ],
+};
+---
+
+<RootLayout title={frontmatter.title}>
   <!-- Start navbar -->
   <div class="navbar mx-auto max-w-screen-xl border-b bg-base-100">
     <div class="navbar-start">
@@ -8,7 +51,7 @@
       </a>
     </div>
     <div class="navbar-end">
-      <a class="btn">Sobre nosotros</a>
+      <a class="btn">Nuestro equipo</a>
     </div>
   </div>
   <!-- End navbar -->
@@ -20,7 +63,7 @@
       <!-- Start article card -->
       <div class="card card-bordered max-w-prose border-base-300 bg-base-100">
         <figure class="aspect-[851/315] w-full">
-          <img src="/honey-nets/cover.jpg" alt="Un oso comiendo miel." />
+          <div class="cover h-full w-full"></div>
         </figure>
         <div class="card-body">
           <article class="prose">
@@ -36,14 +79,29 @@
           <li>
             <h2 class="menu-title">Honey Nets</h2>
             <ul>
-              <li>
-                <a href="/honey-nets/about">
-                  Fortaleciendo la Seguridad en Redes: El Poder de las Honey
-                  Nets
-                </a>
-              </li>
-              <li><a href="/honey-nets/functions">Item 2</a></li>
-              <li><a href="/honey-nets/virtual">Item 3</a></li>
+              {
+                menuEntries.honeyNets.map((entry) => (
+                  <li>
+                    <a class="menu-link" href={entry.href}>
+                      {entry.title}
+                    </a>
+                  </li>
+                ))
+              }
+            </ul>
+          </li>
+          <li>
+            <h2 class="menu-title">Tunelización</h2>
+            <ul>
+              {
+                menuEntries.tunneling.map((entry) => (
+                  <li>
+                    <a class="menu-link" href={entry.href}>
+                      {entry.title}
+                    </a>
+                  </li>
+                ))
+              }
             </ul>
           </li>
         </ul>
@@ -51,7 +109,7 @@
       <!-- End of sidebar -->
     </div>
   </main>
-</div>
+</RootLayout>
 
 <style>
   .pattern {
@@ -64,5 +122,16 @@
       oklch(var(--b2)) 3.5px,
       oklch(var(--b2)) 17.5px
     );
+  }
+
+  .cover {
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: repeating-radial-gradient(
+        circle at 0 0,
+        transparent 0,
+        #e5e5f7 10px
+      ),
+      repeating-linear-gradient(#444cf755, #444cf7);
   }
 </style>

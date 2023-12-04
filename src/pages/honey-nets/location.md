@@ -1,8 +1,9 @@
 ---
-layout: ./_layout.astro
+layout: ../../layouts/blog-layout.astro
+title: Honey Nets
 ---
 
-# Ubicación
+# Ubicación en la Red
 
 La ubicación de los honeypots es esencial para maximizar su efectividad, ya que debido a su carácter intrínsecamente pasivo una ubicación de difícil acceso eliminará gran parte de su atractivo para potenciales atacantes. Por otro lado, si su ubicación es demasiado artificial u obvia cualquier experimentado atacante la descubrirá y evitará todo contacto con ella.
 

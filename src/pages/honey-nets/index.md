@@ -1,5 +1,6 @@
 ---
-layout: ./_layout.astro
+layout: ../../layouts/blog-layout.astro
+title: Honey Nets
 ---
 
 # Fortaleciendo la Seguridad en Redes: El Poder de las Honey Nets
@@ -12,8 +13,10 @@ Las Honey Nets son un tipo especial de señuelo diseñado para atraer a los cibe
 
 ## Cómo Funcionan las Honey Nets
 
-Las Honey Nets operan mediante la creación de un entorno simulado, lleno de atractivos señuelos que simulan vulnerabilidades. Estos señuelos pueden incluir sistemas operativos, aplicaciones y servicios aparentemente desprotegidos, diseñados para llamar la atención de los atacantes. Cuando un intruso interactúa con estos señuelos, la HoneyNet registra cada movimiento, analizando patrones y tácticas empleadas.
+Las Honey Nets operan mediante la creación de un entorno simulado, lleno de atractivos señuelos que simulan vulnerabilidades. Estos señuelos pueden incluir sistemas operativos, aplicaciones y servicios aparentemente desprotegidos, diseñados para llamar la atención de los atacantes. Cuando un intruso interactúa con estos señuelos, la Honey Net registra cada movimiento, analizando patrones y tácticas empleadas.
 Este enfoque no solo ayuda a identificar posibles amenazas, sino que también proporciona una visión detallada de las técnicas de ataque más recientes. Al entender mejor cómo operan los ciberdelincuentes, los equipos de seguridad pueden fortalecer las defensas y anticiparse a futuros ataques.
+
+![Diagrama de una Honey Net.](../../assets/honey-nets/about.png)
 
 ## Beneficios de Implementar Honey Nets
 
@@ -29,7 +32,5 @@ A pesar de sus beneficios, la implementación de Honey Nets conlleva desafíos y
 ## Conclusión
 
 En el constante juego del gato y el ratón que es la seguridad cibernética, las Honey Nets ofrecen una estrategia valiosa para anticiparse a los ciberataques. Al comprender las tácticas de los atacantes y fortalecer las defensas, las organizaciones pueden construir un ecosistema digital más seguro y resistente. La implementación sabía de Honey Nets no solo protege contra amenazas actuales, sino que también prepara el terreno para enfrentar los desafíos cibernéticos del futuro.
-
-![Diagrama de una Honey Net.](../../assets/honey-nets/about.png)
 
 [Fuente](https://www.honeynet.org/)
