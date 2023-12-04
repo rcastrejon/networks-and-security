@@ -6,7 +6,7 @@ layout: ./_layout.astro
 
 Una Honey Net virtual es una red de señuelos contenida completamente en un único ordenador mediante la utilización de software de virtualización. Estas herramientas permiten la ejecución simultánea de varios sistemas operativos en un único equipo físico de modo que, pese a compartir los recursos del sistema anfitrión, aparenten estar corriendo en máquinas distintas e independientes. Este software es capaz de albergar los sistemas operativos más extendidos, alcanzando un rendimiento cada vez más cercano al que se consigue sobre máquinas físicas.
 
-![Diagrama de una Honey Net virtual](/honey-nets/virtual.png)
+![Diagrama de una Honey Net virtual.](../../assets/honey-nets/virtual.png)
 
 Estas redes virtuales no constituyen una Tercera Generación de Honey Nets pues se basan en las mismas ideas e incluso pueden replicar las arquitecturas de Primera o Segunda Generación. Sin embargo, el empleo de estas herramientas de virtualización ofrece un conjunto de ventajas e implica una serie de limitaciones para el diseño de Honey Nets que incidirán en su arquitectura final y la apartaron de los modelos explicados anteriormente.
 

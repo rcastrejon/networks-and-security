@@ -18,6 +18,6 @@ Aparte de los sistemas destinados a recibir los ataques, una Honey Net cuenta co
 - Centralización de información. Para conseguir un mejor rendimiento en escenarios con distintas Honey Nets dispersas por Internet es recomendable que la información capturada se envíe de forma segura a un servidor centralizado para su almacenamiento y análisis.
   De este modo se puede tener un mayor control sobre los datos recogidos, se pueden re-aprovechar experiencias y se puede obtener una imagen más clara de la evolución de los diferentes ataques presentes en La Red.
 
-![Diagrama de una Honey Net](/honey-nets/functions.png)
+![Diagrama de una Honey Net.](../../assets/honey-nets/functions.png)
 
 [Fuente](http://arantxa.ii.uam.es/~jlopezv/publicaciones/mundointernet04.pdf)

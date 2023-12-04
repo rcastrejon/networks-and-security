@@ -30,6 +30,6 @@ A pesar de sus beneficios, la implementación de Honey Nets conlleva desafíos y
 
 En el constante juego del gato y el ratón que es la seguridad cibernética, las Honey Nets ofrecen una estrategia valiosa para anticiparse a los ciberataques. Al comprender las tácticas de los atacantes y fortalecer las defensas, las organizaciones pueden construir un ecosistema digital más seguro y resistente. La implementación sabía de Honey Nets no solo protege contra amenazas actuales, sino que también prepara el terreno para enfrentar los desafíos cibernéticos del futuro.
 
-![Diagrama de una Honey Net](/honey-nets/about.png)
+![Diagrama de una Honey Net.](../../assets/honey-nets/about.png)
 
 [Fuente](https://www.honeynet.org/)
