@@ -1,0 +1,68 @@
+<div>
+  <!-- Start navbar -->
+  <div class="navbar mx-auto max-w-screen-xl border-b bg-base-100">
+    <div class="navbar-start">
+      <a class="btn btn-ghost text-xl" href="/" title="SecureNet">
+        <img class="h-8 w-8" src="/logo.svg" alt="Logo" />
+        <span>SecureNet</span>
+      </a>
+    </div>
+    <div class="navbar-end">
+      <a class="btn">Sobre nosotros</a>
+    </div>
+  </div>
+  <!-- End navbar -->
+
+  <main class="pattern min-h-[calc(100vh-4rem)]">
+    <div
+      class="mx-auto grid max-w-screen-lg grid-cols-[max-content_1fr] space-x-4 p-4"
+    >
+      <!-- Start article card -->
+      <div class="card card-bordered max-w-prose border-base-300 bg-base-100">
+        <figure class="aspect-[851/315] w-full">
+          <img src="/honey-nets/cover.jpg" alt="Un oso comiendo miel." />
+        </figure>
+        <div class="card-body">
+          <article class="prose">
+            <slot />
+          </article>
+        </div>
+      </div>
+      <!-- End article card -->
+
+      <!-- Start of sidebar -->
+      <div>
+        <ul class="menu rounded-box border bg-base-100">
+          <li>
+            <h2 class="menu-title">Honey Nets</h2>
+            <ul>
+              <li>
+                <a href="/honey-nets/about">
+                  Fortaleciendo la Seguridad en Redes: El Poder de las Honey
+                  Nets
+                </a>
+              </li>
+              <li><a href="/honey-nets/functions">Item 2</a></li>
+              <li><a href="/honey-nets/virtual">Item 3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- End of sidebar -->
+    </div>
+  </main>
+</div>
+
+<style>
+  .pattern {
+    background-color: oklch(var(--b2));
+    opacity: 0.8;
+    background: repeating-linear-gradient(
+      45deg,
+      oklch(var(--b3)),
+      oklch(var(--b3)) 3.5px,
+      oklch(var(--b2)) 3.5px,
+      oklch(var(--b2)) 17.5px
+    );
+  }
+</style>
