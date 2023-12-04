@@ -38,6 +38,24 @@ const menuEntries = {
       href: "/tunneling/pptp",
     },
   ],
+  iot: [
+    {
+      title: "¿Qué es el Internet de las cosas?",
+      href: "/iot",
+    },
+    {
+      title: "Riesgos de seguridad y buenas prácticas",
+      href: "/iot/risks",
+    },
+    {
+      title: "Privacidad y Seguridad",
+      href: "/iot/privacy",
+    },
+    {
+      title: "IoT Industrial",
+      href: "/iot/industry",
+    },
+  ],
 };
 ---
 
@@ -95,6 +113,20 @@ const menuEntries = {
             <ul>
               {
                 menuEntries.tunneling.map((entry) => (
+                  <li>
+                    <a class="menu-link" href={entry.href}>
+                      {entry.title}
+                    </a>
+                  </li>
+                ))
+              }
+            </ul>
+          </li>
+          <li>
+            <h2 class="menu-title">Internet de las Cosas</h2>
+            <ul>
+              {
+                menuEntries.iot.map((entry) => (
                   <li>
                     <a class="menu-link" href={entry.href}>
                       {entry.title}
